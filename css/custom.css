@@ -377,20 +377,20 @@ nav.first-nav_contact .right ul li a span.small-email,
 /* Welcome Cloud Above Chatbot Icon */
 #welcome-cloud {
     position: fixed;
-    bottom: 115px;     /* Adjust height above icon */
+    bottom: 115px;
     right: 20px;
-    background:#69c1fc;
+    background: #ffffff;
     padding: 12px 18px;
     border-radius: 18px;
     font-size: 14px;
-    color:#000;
+    color: #222;
     box-shadow: 0px 4px 14px #0002;
     max-width: 230px;
     z-index: 99999;
-    display: block; /* ALWAYS visible */
+    display: block; /* visible before click */
 }
 
-/* Cloud tail */
+/* Cloud Tail */
 #welcome-cloud::after {
     content: "";
     position: absolute;
