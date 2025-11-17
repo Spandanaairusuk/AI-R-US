@@ -374,32 +374,33 @@ nav.first-nav_contact .right ul li a span.small-email,
     width: 70px;     /* make icon same size */
     height: auto;
 }
-/* Chatbot Welcome Cloud */
+/* Welcome Cloud Above Chatbot Icon */
 #welcome-cloud {
     position: fixed;
-    bottom: 120px;
-    right: 25px;
-    background: #ffffff;
-    padding: 12px 16px;
-    border-radius: 20px;
+    bottom: 115px;     /* Adjust height above icon */
+    right: 20px;
+    background:#69c1fc;
+    padding: 12px 18px;
+    border-radius: 18px;
     font-size: 14px;
-    color: #333;
-    box-shadow: 0px 4px 12px #0003;
-    max-width: 220px;
+    color: #222;
+    box-shadow: 0px 4px 14px #0002;
+    max-width: 230px;
     z-index: 99999;
-    display: block;  /* ALWAYS VISIBLE */
+    display: block; /* ALWAYS visible */
 }
 
-/* Cloud Tail */
+/* Cloud tail */
 #welcome-cloud::after {
     content: "";
     position: absolute;
-    bottom: -10px;
-    right: 20px;
-    border-width: 10px;
+    bottom: -12px;
+    right: 30px;
+    border-width: 12px;
     border-style: solid;
-    border-color: #fff transparent transparent transparent;
+    border-color: #ffffff transparent transparent transparent;
 }
+
 
  
 /* Chat Window */
