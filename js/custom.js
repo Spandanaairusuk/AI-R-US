@@ -112,9 +112,17 @@
 ------------------------------ */
 document.getElementById("chatbot-icon").onclick = () => {
     let win = document.getElementById("chatbot-window");
-    win.style.display = win.style.display === "flex" ? "none" : "flex";
+    let cloud = document.getElementById("welcome-cloud");
+
+    if (win.style.display === "flex") {
+        win.style.display = "none";   // close chat
+        cloud.style.display = "block"; // show cloud again
+    } else {
+        win.style.display = "flex";    // open chat
+        cloud.style.display = "none";  // hide cloud
+    }
 };
- 
+
 /* ----------------------------
    ADD MESSAGE
 ------------------------------ */
