@@ -367,7 +367,7 @@ nav.first-nav_contact .right ul li a span.small-email,
     right: 25px;
     width: 70px;
     height: 70px;
-    background: #0084ff;
+    background: #285DA2;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -396,7 +396,7 @@ nav.first-nav_contact .right ul li a span.small-email,
  
 /* Header */
 #chat-header {
-    background: #0084ff;
+    background: #285DA2;
     color: white;
     padding: 15px;
     text-align: center;
@@ -444,7 +444,7 @@ nav.first-nav_contact .right ul li a span.small-email,
 }
 #sendBtn {
     width: 70px;
-    background: #0084ff;
+    background: #285DA2;
     color: white;
     border: none;
     cursor: pointer;
