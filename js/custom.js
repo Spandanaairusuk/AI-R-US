@@ -161,6 +161,7 @@ function showMainOptions() {
         <label><input type="radio" name="opt" value="timings"> Timings</label><br>
         <label><input type="radio" name="opt" value="placement"> Placement</label><br>
         <label><input type="radio" name="opt" value="address"> Address</label><br>
+		 <label><input type="radio" name="opt" value="exit"> ❌ Exit Chat</label><br>
     `;
  
     box.querySelectorAll("input").forEach(r => {
@@ -245,7 +246,14 @@ function handleUserMessage(msg) {
         showMainOptions();
         return;
     }
- 
+ if (msg === "exit") {
+    addMessage("Thank you! Chat closed.", "bot");
+    setTimeout(() => {
+        document.getElementById("chatbot-window").style.display = "none";
+    }, 800);
+    return;
+}
+
     addMessage("How can I help you? Choose an option below.", "bot");
     showMainOptions();
 }
