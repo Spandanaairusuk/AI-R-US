@@ -238,9 +238,9 @@
         <!-- STICKY SECTION NAV -->
 <div class="airus-sticky-nav">
   <a href="#what-you-get" class="nav-link active">What you get</a>
-  <a href="#who-we-are" class="nav-link">Who is AI R US</a>
-  <a href="#why-airus" class="nav-link">Why AI R US</a>
   <a href="#courses" class="nav-link">Courses</a>
+    <a href="#who-we-are" class="nav-link">Who is AI R US</a>
+  <a href="#why-airus" class="nav-link">Why AI R US</a>
   <a href="#contact" class="nav-link">Contact us</a>
   <a href="#new-batch" class="nav-link">New Batch</a>
 </div>
@@ -306,6 +306,175 @@
 
 
 </section>
+<!-- ===== AI R US INTRO & WHY SECTION ===== -->
+<section class="airus_intro">
+  <div class="container">
+
+    <!-- WHO IS AI R US -->
+    <div class="intro_block">
+      <div class="intro_text">
+        <span class="tagline">Who We Are</span>
+        <h2>AI R US – Shaping Future Tech Professionals</h2>
+        <p>
+          <strong>AI R US</strong> is a next-generation <strong>AI Training Institute in Shivamogga</strong>, 
+          dedicated to delivering industry-ready skills in 
+          <strong>Artificial Intelligence, Cloud Computing, Web Development, Python, Java, and Full Stack Development</strong>.
+        </p>
+        <p>
+          We focus on <strong>practical learning, real-time projects, and expert mentorship</strong>, 
+          ensuring learners gain confidence to succeed in the fast-evolving technology landscape.
+        </p>
+      </div>
+    </div>
+
+    <!-- WHY AI R US -->
+    <div class="why_block">
+      <h2>Why AI R US?</h2>
+
+      <div class="why_grid">
+        <div class="why_card">
+          <h3>Industry-Focused Learning</h3>
+          <p>Curriculum aligned with real-world industry requirements and latest technologies.</p>
+        </div>
+
+        <div class="why_card">
+          <h3>Hands-On Projects</h3>
+          <p>Work on live projects that strengthen practical skills and job readiness.</p>
+        </div>
+
+        <div class="why_card">
+          <h3>Expert Mentors</h3>
+          <p>Learn directly from professionals with real industry experience.</p>
+        </div>
+
+        <div class="why_card">
+          <h3>Career-Oriented Training</h3>
+          <p>Designed to help students secure jobs, internships, and career growth.</p>
+        </div>
+
+        <div class="why_card">
+          <h3>Beginner to Advanced</h3>
+          <p>Structured programs suitable for students, graduates, and working professionals.</p>
+        </div>
+
+        <div class="why_card">
+          <h3>Modern Learning Environment</h3>
+          <p>Access to updated tools, labs, and professional learning resources.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* GENERAL */
+.airus_intro {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #e6f0ff, #ffffff);
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* WHO IS AI R US */
+.intro_block {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.intro_text {
+  max-width: 850px;
+  text-align: center;
+  animation: fadeUp 1s ease forwards;
+}
+
+.tagline {
+  display: inline-block;
+  background: #0047b3;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.intro_text h2 {
+  font-size: 40px;
+  color: #0047b3;
+  margin-bottom: 20px;
+}
+
+.intro_text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* WHY AI R US */
+.why_block h2 {
+  text-align: center;
+  font-size: 38px;
+  color: #0047b3;
+  margin-bottom: 50px;
+}
+
+.why_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.why_card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 71, 179, 0.15);
+  transform: translateY(40px);
+  opacity: 0;
+  animation: riseUp 0.8s ease forwards;
+}
+
+.why_card:nth-child(1) { animation-delay: 0.2s; }
+.why_card:nth-child(2) { animation-delay: 0.4s; }
+.why_card:nth-child(3) { animation-delay: 0.6s; }
+.why_card:nth-child(4) { animation-delay: 0.8s; }
+.why_card:nth-child(5) { animation-delay: 1s; }
+.why_card:nth-child(6) { animation-delay: 1.2s; }
+
+.why_card h3 {
+  color: #0047b3;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.why_card p {
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes riseUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .intro_text h2,
+  .why_block h2 {
+    font-size: 30px;
+  }
+}
+</style>
 
 <section id="who-we-are" class="airus-section">
   <h2>Who is AI R US</h2>
