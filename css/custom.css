@@ -75,79 +75,7 @@
 
 
 
-.plan-name {
-    font-size: 24px;
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0;
-    font-weight: 700;
-    color: #0a0f29;
-    margin-bottom: 15px;
-}
 
-.plan-price { margin: 15px 0; }
-
-.currency { font-size: 30px; font-weight: 700; color:#285DA2; vertical-align:auto }
-
-.amount { font-size: 30px; font-weight: 700; color: #285DA2; }
-
-.plan-duration { font-size: 16px; color: #666; margin-top: 5px; }
-
-.pricing-cards-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 4 cards in one row */
-    gap: 30px; /* more spacing between cards */
-    max-width: 1500px; /* slightly wider container */
-    margin: 0 auto; /* center container */
-    padding: 60px 20px;
-}
-
-.pricing-card {
-    background: #fff;
-    border-radius: 16px; /* slightly rounder corners */
-    padding: 35px 30px; /* more padding inside */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* stronger shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%; /* equal height for all cards */
-}
-
-.pricing-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
-}
-
-.card-header .plan-name {
-    font-size: 22px; /* slightly larger */
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-
-.card-header .plan-price {
-    font-size: 26px; /* slightly larger */
-    font-weight: 700;
-    color: #285DA2;
-}
-
-.card-header .plan-duration {
-    color: #555;
-    font-size: 16px; /* slightly larger */
-    margin-bottom: 20px;
-}
-
-.features-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 25px 0; /* more space below */
-}
-
-.features-list li {
-    margin-bottom: 10px; /* bigger spacing */
-    font-size: 15px;
-}
 
 .enroll-button {
      margin-top: auto; 
@@ -488,4 +416,48 @@ nav.first-nav_contact .right ul li a span.small-email,
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(5px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* home page  */
+/* STICKY NAV BAR */
+.airus-sticky-nav {
+  position: sticky;
+  top: 90px; /* adjust if header height changes */
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 25px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 40px auto;
+  width: fit-content;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+/* NAV LINKS */
+.airus-sticky-nav .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #374151;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.airus-sticky-nav .nav-link:hover {
+  color: #285DA2;
+}
+
+.airus-sticky-nav .nav-link.active {
+  color: #285DA2;
+  font-weight: 600;
+}
+
+/* SECTIONS */
+.airus-section {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: auto;
 }
