@@ -132,5 +132,17 @@
 
 
 
+/* enroll button application  */
 
+
+const openForm = document.getElementById("openForm");
+const closeForm = document.getElementById("closeForm");
+const popupForm = document.getElementById("popupForm");
+
+openForm.onclick = () => popupForm.style.display = "flex";
+closeForm.onclick = () => popupForm.style.display = "none";
+
+window.onclick = (e) => {
+  if (e.target === popupForm) popupForm.style.display = "none";
+};
 
